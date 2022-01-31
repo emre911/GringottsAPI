@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GringottsAPI", "GringottsAPI\GringottsAPI.csproj", "{644172FC-4074-4202-9D48-D12CED9B4674}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gringotts.Data", "Gringotts.Data\Gringotts.Data.csproj", "{AFAC2337-1D36-48DB-8124-A291DE23BC29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{644172FC-4074-4202-9D48-D12CED9B4674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{644172FC-4074-4202-9D48-D12CED9B4674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{644172FC-4074-4202-9D48-D12CED9B4674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{644172FC-4074-4202-9D48-D12CED9B4674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFAC2337-1D36-48DB-8124-A291DE23BC29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFAC2337-1D36-48DB-8124-A291DE23BC29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFAC2337-1D36-48DB-8124-A291DE23BC29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFAC2337-1D36-48DB-8124-A291DE23BC29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B59D6BF-9840-42CC-BC7A-F9C4A2C4826D}
+	EndGlobalSection
+EndGlobal
