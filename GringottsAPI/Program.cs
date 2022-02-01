@@ -101,6 +101,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Gringotts Banking API");
+    c.RoutePrefix = "docs";
+});
+
 app.UseHttpsRedirection();
 
 app.UseCors(x => x
