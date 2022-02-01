@@ -8,6 +8,6 @@ namespace Gringotts.Data.Repositories
 
         Task<List<Transaction>> ListWithAccountNumber(long accountNumber);
 
-        Task<List<Transaction>> ListWithCustomerTimeline(int customerNumber, DateTime startDate, DateTime endDate);
+        Task<List<Transaction>> ListWithCustomerTimeline(long customerNumber, DateTime startDate, DateTime endDate);
     }
 }

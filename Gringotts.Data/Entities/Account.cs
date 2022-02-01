@@ -5,7 +5,7 @@
         public string AccountName { get; set; }
         public long AccountNumber { get; set; }
         public short AccountType { get; set; }
-        public int CustomerNumber { get; set; }
+        public long CustomerNumber { get; set; }
         public string Currency { get; set; }
         public decimal BeginBalance { get; set; }
         public decimal Balance { get; set; }

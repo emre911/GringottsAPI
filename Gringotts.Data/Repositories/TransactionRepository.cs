@@ -40,7 +40,7 @@ namespace Gringotts.Data.Repositories
             return await _context.Transaction.Where(t => t.AccountNumber == accountNumber && t.IsActive).ToListAsync();
         }
 
-        public async Task<List<Transaction>> ListWithCustomerTimeline(int customerNumber, DateTime startDate, DateTime endDate)
+        public async Task<List<Transaction>> ListWithCustomerTimeline(long customerNumber, DateTime startDate, DateTime endDate)
         {
             return await _context.Transaction.Where(t => t.CustomerNumber == customerNumber && t.IsActive && t.CreatedOn >= startDate && t.CreatedOn <= endDate).ToListAsync();
         }

@@ -34,7 +34,7 @@ namespace Gringotts.Data.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public async Task<Customer> Get(int customerNumber)
+        public async Task<Customer> Get(long customerNumber)
         {
             return await _context.Customer.Where(c => c.CustomerNumber == customerNumber).FirstOrDefaultAsync();
         }

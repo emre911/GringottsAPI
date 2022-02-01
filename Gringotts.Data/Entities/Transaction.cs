@@ -8,7 +8,7 @@ namespace Gringotts.Data.Entities
 {
     public class Transaction : BaseEntity
     {
-        public int CustomerNumber { get; set; }
+        public long CustomerNumber { get; set; }
         public long AccountNumber { get; set; }
         public string Type { get; set; }
         public string Currency { get; set; }

@@ -2,7 +2,7 @@
 {
     public class GetCustomerOutputModel : BaseResponse
     {
-        public int CustomerNumber { get; set; }
+        public long CustomerNumber { get; set; }
         public string FirstName { get; set; }
         public string? MiddleName { get; set; }
         public string LastName { get; set; }

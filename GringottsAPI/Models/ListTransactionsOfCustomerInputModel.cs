@@ -5,7 +5,7 @@
     /// </summary>
     public class ListTransactionsOfCustomerInputModel
     {
-        public int CustomerNumber { get; set; }
+        public long CustomerNumber { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
     }
