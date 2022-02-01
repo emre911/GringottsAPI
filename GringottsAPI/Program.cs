@@ -97,8 +97,12 @@ var app = builder.Build();
 //Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger(c => c.RouteTemplate = "/swagger/docs/{documentName}/swagger.json");
-    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/docs/v1/swagger.json", "Gringotts Banking API"));
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Gringotts Banking API");
+        c.RoutePrefix = "docs";
+    });
 }
 
 app.UseHttpsRedirection();
