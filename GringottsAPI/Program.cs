@@ -94,17 +94,11 @@ builder.Services.AddSwaggerGen(s =>
 
 var app = builder.Build();
 
-//Configure the HTTP request pipeline.
-//if (app.Environment.IsDevelopment())
-//{
-
-//}
-
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Gringotts Banking API");
-    c.RoutePrefix = "docs";
+    c.RoutePrefix = String.Empty;
 });
 
 app.UseHttpsRedirection();
